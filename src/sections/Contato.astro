@@ -1,0 +1,58 @@
+---
+// Contato-H: Dark Glassmorphism - Design tecnológico e imersivo
+interface Props { title: string; subtitle?: string; desc?: string; content?: string;
+}
+const { title, subtitle, desc, content } = Astro.props;
+const description = subtitle || desc || '';
+---
+<section class="py-24 bg-[#0a0a0a] text-white overflow-hidden relative min-h-screen flex flex-col justify-center">
+  <!-- Interactive Glows -->
+  <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[200px] -z-0"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px] -z-0"></div>
+  
+  <div class="max-w-6xl mx-auto px-4 relative z-10 w-full">
+    <div class="grid lg:grid-cols-2 gap-20 items-center">
+      
+      <!-- Text side -->
+      <div class="text-center lg:text-left">
+        <span class="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-[9px] font-black uppercase tracking-[0.4em] mb-8 animate-pulse shadow-2xl">
+           Criptografia de Ponta-a-Ponta
+        </span>
+        <h1 class="text-5xl md:text-8xl font-black tracking-tighter uppercase mb-8 leading-none italic">{title}</h1>
+      {content && <p class="text-gray-500 mt-4 leading-relaxed">{content}</p>}
+        <p class="text-xl md:text-3xl font-light text-white/30 italic leading-relaxed mb-12">
+           "{description}"
+        </p>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-8 opacity-40 group hover:opacity-100 transition-opacity">
+           <div class="flex flex-col gap-1">
+              <div class="text-[10px] font-black uppercase tracking-widest text-primary">Siga as Atualizações</div>
+              <div class="text-xs font-bold text-white uppercase tracking-widest">@SF_ANALYTICS</div>
+           </div>
+        </div>
+      </div>
+
+      <!-- Glass Form -->
+      <div class="bg-white/5 backdrop-blur-3xl border border-white/10 rounded-[4rem] p-10 md:p-16 shadow-2xl relative group overflow-hidden">
+        <!-- Inner glow -->
+        <div class="absolute -top-12 -right-12 w-24 h-24 bg-primary/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+        
+        <form class="relative z-10 space-y-8">
+           <div class="space-y-6">
+              <div class="relative group/field">
+                 <input type="text" class="w-full bg-transparent border-b-2 border-white/10 py-4 focus:border-primary focus:outline-none transition-all text-lg font-medium peer placeholder-transparent" id="name" placeholder="Seu Nome" />
+                 <label for="name" class="absolute left-0 top-4 text-white/30 text-lg transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-primary pointer-events-none uppercase tracking-widest font-black">Qual seu Nome?</label>
+              </div>
+              <div class="relative group/field pt-6">
+                 <input type="email" class="w-full bg-transparent border-b-2 border-white/10 py-4 focus:border-primary focus:outline-none transition-all text-lg font-medium peer placeholder-transparent" id="email" placeholder="Seu E-mail" />
+                 <label for="email" class="absolute left-0 top-10 text-white/30 text-lg transition-all peer-placeholder-shown:text-lg peer-placeholder-shown:top-10 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary pointer-events-none uppercase tracking-widest font-black">Seu Melhor E-mail</label>
+              </div>
+           </div>
+           <textarea placeholder="Como podemos inovar juntos?" rows="4" class="w-full bg-white/5 border border-white/10 rounded-3xl p-6 text-white focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/5 transition-all text-lg font-medium resize-none"></textarea>
+           <button class="w-full bg-primary text-white py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-white hover:text-dark transition-all shadow-2xl shadow-primary/20 transform group-active:scale-95">
+              Enviar aos Servidores
+           </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

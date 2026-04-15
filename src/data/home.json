@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "CARREGANDOMALINHAS — Descubra o Mundo com CARREGANDOMALINHAS",
+    "description": "Junte-se a nós em uma jornada incrível cheia de aventuras e tecnologia."
+  },
+  "hero": {
+    "title": "Descubra o Mundo com CARREGANDOMALINHAS",
+    "subtitle": "Junte-se a nós em uma jornada incrível cheia de aventuras e tecnologia.",
+    "btnText": "Vamos viajar juntos!",
+    "bgImage": "/images/hero.jpg",
+    "btnLink": "/blog"
+  },
+  "features": {
+    "title": "O que você encontrará aqui",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Dicas de Viagem",
+        "desc": "Explore destinos incríveis e receba dicas práticas para a sua próxima aventura."
+      },
+      {
+        "icon": "💻",
+        "title": "Nomadismo Digital",
+        "desc": "Saiba como trabalhar de qualquer lugar do mundo e aproveitar a liberdade que a tecnologia oferece."
+      },
+      {
+        "icon": "❤️",
+        "title": "Relacionamentos em Viagens",
+        "desc": "Entenda como construir conexões durante suas jornadas e enriquecer suas experiências."
+      },
+      {
+        "icon": "💰",
+        "title": "Finanças para Viajantes",
+        "desc": "Aprenda a gerenciar seu dinheiro enquanto viaja e transforma sua vida."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre o CARREGANDOMALINHAS",
+    "desc": "Oláa pessoas queridas! Neste blog, compartilho experiências de viagem e conhecimento sobre como a tecnologia pode enriquecer nossas penas. Meu propósito é ajudar você a transformar sua vida e proporcionar liberdade através das viagens.",
+    "stats": [
+      {
+        "value": "100+",
+        "label": "Experiências compartilhadas"
+      },
+      {
+        "value": "50+",
+        "label": "Destinos explorados"
+      }
+    ],
+    "image": "/images/about.jpg",
+    "btnText": "Saiba Mais",
+    "btnLink": "/sobre"
+  },
+  "posts": {
+    "title": "Últimos Artigos",
+    "limit": 3,
+    "btnText": "Ver Blog",
+    "btnLink": "/blog"
+  }
+}

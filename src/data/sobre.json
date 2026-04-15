@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Sobre Nós",
+    "description": "Conheça o CARREGANDOMALINHAS"
+  },
+  "hero": {
+    "title": "Sobre Nós",
+    "subtitle": "Oláa pessoas queridas! Neste blog, compartilho experiências de viagem e conhecimento sobre como a tecnologia pode enriquecer nossas penas. Meu propósito é ajudar você a transformar sua vida e proporcionar liberdade através das viagens."
+  },
+  "content": "Este blog é um espaço para amantes de viagens e tecnologia. Aqui, você encontrará não apenas dicas de destinos, mas também histórias e experiências que podem inspirar sua próxima aventura. Juntos, vamos explorar o mundo e as possibilidades que a tecnologia traz.",
+  "mission": "Minha missão aqui com esse Blog é criar conteúdos e compartilhar experiências com pessoas que adoram uma boa viagem!",
+  "image": "/images/sobre.jpg",
+  "stats": [
+    {
+      "value": "500+",
+      "label": "Artigos"
+    },
+    {
+      "value": "100k+",
+      "label": "Leitores"
+    },
+    {
+      "value": "5",
+      "label": "Redatores"
+    }
+  ],
+  "team": []
+}

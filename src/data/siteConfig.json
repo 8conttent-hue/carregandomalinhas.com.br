@@ -1,0 +1,53 @@
+{
+  "name": "CARREGANDOMALINHAS",
+  "slug": "carregandomalinhas.com.br",
+  "description": "Oláa pessoas queridas! Missão? Minha missão aqui com esse Blog é criar conteúdos e compartilhar experiências com pessoas, que assim como eu, adoram uma boa viagem. Além do mais, pessoas que são fissuradas ou adeptas de tecnologias e toda liberdade que ela trás para nós. E mesmo que você não goste muito de tecnologias e prefira apreciar a viagem em si, a natureza e etc, fique tranquilo que vou passar os conhecimentos e dicas de uma maneira bem descontraída e leve. Essa é minha missão! Conteúdo? Falo sobre viagens, nomadismo digital, relacionamentos, dinheiro, e tudo que cerca meu mundo e o de várias pessoas com esse mesmo DNA ou parecido. Meu propósito é gerar transformação na vida de cada pessoa que lê esse blog. Sejam muito bem-vindos! Espero que gostem e comentem meus conteúdos. Beijoss",
+  "url": "https://carregandomalinhas.com.br",
+  "niche": "Viagens e Turismo",
+  "keywords": "Olaa pessoas queridas Missao Minha missao aqui com esse Blog e criar",
+  "email": "contato@carregandomalinhas.com.br",
+  "palette": "slate",
+  "colors": {
+    "primary": "#334155",
+    "accent": "#1e293b",
+    "dark": "#0f172a"
+  },
+  "headerContrast": "dark",
+  "font": "playfair",
+  "fontFamily": "'Playfair Display', serif",
+  "fontUrl": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap",
+  "components": {
+    "header": "Header-A",
+    "hero": "Hero-B",
+    "features": "Features-C",
+    "about": "About-B",
+    "posts": "Posts-J",
+    "footer": "Footer-B",
+    "sobre": "Sobre-C",
+    "contato": "Contato-H"
+  },
+  "menu": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Sobre",
+      "href": "/sobre"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato"
+    }
+  ],
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  }
+}
