@@ -1,34 +1,8 @@
 ---
 // Header-A: Logo esquerda, nav horizontal, sticky
 import siteConfig from '../data/siteConfig.json';
-import { getAllPosts } from '../lib/posts';
 
-const { name, menu: baseMenu = [] } = siteConfig;
-
-// Buscar categorias REAIS do banco de dados (SSR)
-let realCategories = [];
-try {
-  const allPosts = await getAllPosts() || [];
-  realCategories = [...new Set(allPosts.map(p => p.category))].filter(Boolean);
-} catch (e) {
-  console.error('[Header-A Category Error]', e);
-}
-
-// Injetar categorias reais no item "Blog" do menu
-const menu = baseMenu.map((item: any) => {
-  if (item.label.toLowerCase() === 'blog' || item.href === '/blog') {
-    return {
-      ...item,
-      children: realCategories.length
-        ? realCategories.map(cat => ({
-            label: cat,
-            href: `/categoria/${cat.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')}`
-          }))
-        : undefined,
-    };
-  }
-  return item;
-});
+const { name, menu = [] } = siteConfig;
 ---
 <header class="sticky top-0 z-[100] bg-white border-b border-gray-200 shadow-sm">
   <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
